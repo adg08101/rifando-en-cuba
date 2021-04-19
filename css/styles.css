@@ -26,3 +26,6 @@ thead tr th {
   height:200px;
   overflow:scroll;
 }
+.img-responsive {
+  width: 100%;
+}
