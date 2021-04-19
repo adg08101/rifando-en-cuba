@@ -1,6 +1,12 @@
 table tr {
   line-height: 0px;
 }
+table tr td {
+  border-radius: 8px;
+}
+.table thead th {
+  border-radius: 8px;
+}
 .table {
   width: 80%;
   margin-left: 10%;
