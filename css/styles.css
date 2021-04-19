@@ -8,7 +8,13 @@ table tr td {
   border-radius: 8px;
 }
 .table {
-  width: 80%;
-  margin-left: 10%;
   text-align: center;
+}
+.table-success {
+  border: 1.5px dashed green;
+  border-radius: 8px;
+}
+.table-danger {
+  border: 1.5px dashed firebrick;
+  border-radius: 8px;
 }
