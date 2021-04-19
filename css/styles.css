@@ -1,0 +1,8 @@
+table tr {
+  line-height: 0px;
+}
+.table {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
