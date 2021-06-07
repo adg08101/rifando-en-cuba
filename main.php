@@ -27,7 +27,7 @@ if (!isset($_SESSION['session'])) {
     <div class="row">
         <div class="col-3">
             <form method="get" action="logout.php">
-                <input type="submit" value="Logout">
+                <input type="submit" value="Logout" class="logout">
             </form>
             <form>
                 <div class="form-group">
