@@ -19,6 +19,8 @@ if (!isset($_SESSION['session'])) {
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
+    <link href="css/main_styles.css" rel="stylesheet">
+
 </head>
 
 <body>
