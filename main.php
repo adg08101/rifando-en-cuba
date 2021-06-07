@@ -61,7 +61,7 @@ if (!isset($_SESSION['session'])) {
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Fecha</label>
-                    <input type="date" name="fecha">
+                    <input class="form-control" type="date" name="fecha">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Tarea</label>
