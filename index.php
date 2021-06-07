@@ -18,6 +18,7 @@
 
 <body class="text-center">
 <form class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">SD Task Management</h1>
     <label for="inputEmail" class="sr-only">User</label>
     <input type="text" id="inputUser" class="form-control"
            placeholder="Username" required autofocus>
