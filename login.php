@@ -1,4 +1,6 @@
 <?php
-    $user = $_POST['user'];
-    $pass = $_POST['pass'];
-    echo $user, $pass;
+    if (isset($_POST['user'], $_POST['pass']))
+        echo $_POST['user'], $_POST['pass'];
+    else
+        header('Location: .index.php');
+        die();
