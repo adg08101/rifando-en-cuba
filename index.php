@@ -9,11 +9,8 @@
 
     <title>Signin Template for Bootstrap</title>
 
-    <link rel="canonical"
-          href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
-
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
