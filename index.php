@@ -17,14 +17,14 @@
 </head>
 
 <body class="text-center">
-<form class="form-signin">
+<form class="form-signin" action="login.php" method="post">
     <h1 class="h3 mb-3 font-weight-normal">SD Task Management</h1>
     <label for="inputEmail" class="sr-only">User</label>
     <input type="text" id="inputUser" class="form-control"
-           placeholder="Username" required autofocus>
+           placeholder="Username" required autofocus name="user">
     <label for="inputPassword" class="sr-only">Password</label>
     <input type="password" id="inputPassword" class="form-control"
-           placeholder="Password" required>
+           placeholder="Password" required name="pass">
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in
     </button>
 </form>
