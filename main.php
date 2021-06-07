@@ -33,32 +33,40 @@ if (!isset($_SESSION['session'])) {
             </form>
             <form>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <label for="exampleFormControlSelect2">Responsable</label>
+                    <select multiple class="form-control" id="responsable"
+                            name="responsable">
+                        <option>Yo</option>
+                        <option>Tu</option>
+                        <option>El</option>
+                        <option>Ella</option>
+                        <option>Nosotros</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect2">Example multiple select</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <label for="exampleFormControlSelect1">Tipo</label>
+                    <select class="form-control" id="type" name="tipo">
+                        <option>Tarea</option>
+                        <option>Reunión</option>
+                        <option>Otro</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlSelect1">Prioridad</label>
+                    <select class="form-control" id="priority" name="prioridad">
+                        <option>Baja</option>
+                        <option>Media</option>
+                        <option>Alta</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Fecha</label>
+                    <input type="date" name="fecha">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Tarea</label>
+                    <textarea class="form-control" id="task"
+                              rows="3" name="tarea"></textarea>
                 </div>
             </form>
         </div>
