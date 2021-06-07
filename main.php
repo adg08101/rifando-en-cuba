@@ -26,6 +26,9 @@ if (!isset($_SESSION['session'])) {
 <div class="container">
     <div class="row">
         <div class="col-3">
+            <form method="get" action="logout.php">
+                <input type="submit" value="Logout">
+            </form>
             <form>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Email address</label>
