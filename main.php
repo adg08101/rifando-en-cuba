@@ -19,11 +19,9 @@ if (!isset($_SESSION['session'])) {
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link rel="StyleSheet" href="css/styles.css"/>
 </head>
 
-<body class="text-center">
+<body>
 
 <div class="container">
     <div class="row">
