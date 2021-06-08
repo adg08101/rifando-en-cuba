@@ -39,7 +39,7 @@ if (!isset($_SESSION['session'])) {
                 <div class="form-group">
                     <label for="exampleFormControlSelect2">Responsable</label>
                     <select multiple class="form-control" id="responsable"
-                            name="responsable" size="2">
+                            name="responsable[]" size="2">
                         <option>Ahmed</option>
                         <option>Pupo</option>
                         <option>Manu</option>
@@ -69,7 +69,7 @@ if (!isset($_SESSION['session'])) {
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Fecha</label>
-                    <input class="form-control" type="date" name="fecha">
+                    <input class="form-control" type="datetime-local" name="fecha">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Tarea</label>
