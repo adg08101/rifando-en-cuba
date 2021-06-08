@@ -20,12 +20,16 @@ if (!isset($_SESSION['session'])) {
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <link href="css/main_styles.css" rel="stylesheet">
+    <link href="css/vanillaSelectBox.css" rel="stylesheet">
 
+    <script src="js/vanillaSelectBox.js"></script>
+
+    <script src="js/app.js"></script>
 </head>
 
 <body>
 
-<div class="container">
+<div class="container" id="app">
     <div class="row">
         <div class="col-3">
             <form method="get" action="logout.php">
