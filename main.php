@@ -40,11 +40,15 @@ if (!isset($_SESSION['session'])) {
                     <label for="exampleFormControlSelect2">Responsable</label>
                     <select multiple class="form-control" id="responsable"
                             name="responsable" size="2">
-                        <option>Yo</option>
-                        <option>Tu</option>
-                        <option>El</option>
-                        <option>Ella</option>
-                        <option>Nosotros</option>
+                        <option>Ahmed</option>
+                        <option>Pupo</option>
+                        <option>Manu</option>
+                        <option>Ovi</option>
+                        <option>Rose</option>
+                        <option>Yunior</option>
+                        <option>Fernando</option>
+                        <option>Dayana</option>
+                        <option>Angel</option>
                     </select>
                 </div>
                 <div class="form-group">
