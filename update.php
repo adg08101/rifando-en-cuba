@@ -3,17 +3,40 @@ session_start();
 if (!isset($_SESSION['session'])) {
     header('Location: index.php');
     die();
+} elseif (isset($_GET['option'], $_GET['id'])) {
+    if ($_GET['option'] == 'hide') {
+        $mysqli = new mysqli("localhost", "id16643740_root", "ContraTSK2021-*", "id16643740_tasks");
+
+        $id = $_GET['id'];
+        $sql = "UPDATE `tareas` SET `mostrar`=0 WHERE `id` = $id";
+
+        if (mysqli_query($mysqli, $sql)) {
+            header('Location: main.php');
+            die();
+        } else {
+            header('Location: logout.php');
+            die();
+        }
+    } else {
+        header('Location: main.php');
+        die();
+    }
+} elseif (!isset($_POST['id'])) {
+    header('Location: main.php');
+    die();
 } else {
     $mysqli = new mysqli("localhost", "id16643740_root", "ContraTSK2021-*", "id16643740_tasks");
     if ($mysqli->connect_errno) {
         header('Location: logout.php');
         die();
     } else {
-        $fecha = $_POST['fecha'];
+        $id = $_POST['id'];
         $prioridad = $_POST['prioridad'];
+        $fecha = $_POST['fecha'];
         $responsable = isset($_POST['responsable']);
         $tarea = $_POST['tarea'];
         $tipo = $_POST['tipo'];
+        $estado = $_POST['estado'];
 
         $error_value = null;
         $error = false;
@@ -40,8 +63,9 @@ if (!isset($_SESSION['session'])) {
         else
             $responsable = implode(", ", $responsable);
 
-        $sql = "INSERT INTO tareas (fecha_hora, prioridad, responsable, tarea, 
-            tipo) VALUES ('$fecha', '$prioridad', '$responsable', '$tarea', '$tipo')";
+        $sql = "UPDATE `tareas` SET `responsable`='$responsable',
+            `tipo`='$tipo',`prioridad`='$prioridad',`fecha_hora`='$fecha',
+            `tarea`='$tarea',`estado`='$estado' WHERE `id` = $id";
 
         if (mysqli_query($mysqli, $sql)) {
             header('Location: main.php');
