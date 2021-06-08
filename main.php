@@ -38,14 +38,16 @@ if (!isset($_SESSION['session'])) {
             <form>
                 <div class="form-group">
                     <label for="exampleFormControlSelect2">Responsable</label>
-                    <select multiple class="form-control" id="responsable"
-                            name="responsable" size="2">
-                        <option>Yo</option>
-                        <option>Tu</option>
-                        <option>El</option>
-                        <option>Ella</option>
-                        <option>Nosotros</option>
-                    </select>
+                    <div class="form-control">
+                        <select multiple class="form-control" id="responsable"
+                                name="responsable" size="2">
+                            <option>Yo</option>
+                            <option>Tu</option>
+                            <option>El</option>
+                            <option>Ella</option>
+                            <option>Nosotros</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Tipo</label>
