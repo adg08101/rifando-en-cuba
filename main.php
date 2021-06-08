@@ -35,7 +35,7 @@ if (!isset($_SESSION['session'])) {
             <form method="get" action="logout.php">
                 <input type="submit" value="Logout" class="logout">
             </form>
-            <form>
+            <form method="post" action="add.php">
                 <div class="form-group">
                     <label for="exampleFormControlSelect2">Responsable</label>
                     <select multiple class="form-control" id="responsable"
@@ -76,6 +76,7 @@ if (!isset($_SESSION['session'])) {
                     <textarea class="form-control" id="task"
                               rows="3" name="tarea"></textarea>
                 </div>
+                <input class="btn btn-primary" type="submit" value="Adicionar">
             </form>
         </div>
         <div class="col-9">
