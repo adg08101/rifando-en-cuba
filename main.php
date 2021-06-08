@@ -39,7 +39,7 @@ if (!isset($_SESSION['session'])) {
                 <div class="form-group">
                     <label for="exampleFormControlSelect2">Responsable</label>
                     <select multiple class="form-control" id="responsable"
-                            name="responsable">
+                            name="responsable" size="2">
                         <option>Yo</option>
                         <option>Tu</option>
                         <option>El</option>
